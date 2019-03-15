@@ -1,7 +1,9 @@
 package keys
 
 import (
+	"fmt"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+	"os"
 )
 
 // KeyOutput defines a structure wrapping around an Info object used for output
@@ -106,6 +108,12 @@ func Bech32KeyOutput(info Info) (KeyOutput, error) {
 		ko.Threshold = mInfo.Threshold
 		ko.PubKeys = pubKeys
 	}
+
+	fmt.Fprintln(os.Stdout, "*** Bech32KeyOutput()")
+	fmt.Fprintln(os.Stdout, "info.GetPubKey() ")
+	fmt.Fprintln(os.Stdout, info.GetPubKey())
+	fmt.Fprintln(os.Stdout, "info.GetAddress()")
+	fmt.Fprintln(os.Stdout, info.GetAddress())
 
 	return ko, nil
 }

@@ -2,6 +2,7 @@ package keys
 
 import (
 	"bufio"
+	"encoding/hex"
 	"fmt"
 	"os"
 	"reflect"
@@ -15,10 +16,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/crypto/keys/mintkey"
 	"github.com/cosmos/cosmos-sdk/types"
 
-	bip39 "github.com/cosmos/go-bip39"
+	"github.com/cosmos/go-bip39"
 
 	tmcrypto "github.com/tendermint/tendermint/crypto"
-	cryptoAmino "github.com/tendermint/tendermint/crypto/encoding/amino"
+	"github.com/tendermint/tendermint/crypto/encoding/amino"
 	"github.com/tendermint/tendermint/crypto/secp256k1"
 	dbm "github.com/tendermint/tendermint/libs/db"
 )
@@ -171,6 +172,16 @@ func (kb *dbKeybase) persistDerivedKey(seed []byte, passwd, name, fullHdPath str
 	if err != nil {
 		return
 	}
+
+	fmt.Fprintln(os.Stdout, "*** persistDerivedKey()")
+	fmt.Fprintln(os.Stdout, "fullHdPath")
+	fmt.Fprintln(os.Stdout, fullHdPath)
+	fmt.Fprintln(os.Stdout, "masterPriv")
+	fmt.Fprintln(os.Stdout, masterPriv)
+	fmt.Fprintln(os.Stdout, hex.EncodeToString(masterPriv[:]))
+	fmt.Fprintln(os.Stdout, "derivedPriv")
+	fmt.Fprintln(os.Stdout, derivedPriv)
+	fmt.Fprintln(os.Stdout, hex.EncodeToString(derivedPriv[:]))
 
 	// if we have a password, use it to encrypt the private key and store it
 	// else store the public key only

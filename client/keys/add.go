@@ -242,6 +242,10 @@ func runAddCmd(_ *cobra.Command, args []string) error {
 		}
 	}
 
+	fmt.Fprintln(os.Stdout, "kb.CreateAccount(name, mnemonic, bip39Passphrase, encryptPassword, account, index)")
+	fmt.Fprintln(os.Stdout,account)
+	fmt.Fprintln(os.Stdout,index)
+
 	info, err := kb.CreateAccount(name, mnemonic, bip39Passphrase, encryptPassword, account, index)
 	if err != nil {
 		return err

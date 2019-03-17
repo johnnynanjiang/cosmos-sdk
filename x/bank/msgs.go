@@ -1,7 +1,9 @@
 package bank
 
 import (
+	"fmt"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+	"os"
 )
 
 // RouterKey is they name of the bank module
@@ -89,6 +91,15 @@ func (msg MsgMultiSend) ValidateBasic() sdk.Error {
 
 // GetSignBytes Implements Msg.
 func (msg MsgMultiSend) GetSignBytes() []byte {
+	fmt.Fprintln(os.Stdout, "MsgMultiSend.GetSignBytes()")
+	fmt.Fprintln(os.Stdout, "msgCdc.MustMarshalJSON(msg)")
+	fmt.Fprintln(os.Stdout, msgCdc.MustMarshalJSON(msg))
+	fmt.Fprintln(os.Stdout, "")
+
+	fmt.Fprintln(os.Stdout, "sdk.MustSortJSON(msgCdc.MustMarshalJSON(msg)")
+	fmt.Fprintln(os.Stdout, sdk.MustSortJSON(msgCdc.MustMarshalJSON(msg)))
+	fmt.Fprintln(os.Stdout, "")
+
 	return sdk.MustSortJSON(msgCdc.MustMarshalJSON(msg))
 }
 

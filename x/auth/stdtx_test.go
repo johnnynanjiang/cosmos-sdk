@@ -57,6 +57,39 @@ func TestStdSignBytes(t *testing.T) {
 	}
 }
 
+/* got "cyclic import now allowed" error
+func TestStdMsgSendSignBytes(t *testing.T) {
+	msgSend := &MsgSend{
+		FromAddress: sdk.AccAddress([]byte("from")),
+		ToAddress:   sdk.AccAddress([]byte("to")),
+		Amount: sdk.Coins{sdk.NewInt64Coin("atom", 123)},
+	}
+
+	type args struct {
+		chainID  string
+		accnum   uint64
+		sequence uint64
+		fee      StdFee
+		msgs     []sdk.Msg
+		memo     string
+	}
+	defaultFee := newStdFee()
+	tests := []struct {
+		args args
+		want string
+	}{
+		{
+			args{"1234", 3, 6, defaultFee, []sdk.Msg{msgSend}, "memo"},
+			fmt.Sprintf("{\"account_number\":\"3\",\"chain_id\":\"1234\",\"fee\":{\"amount\":[{\"amount\":\"150\",\"denom\":\"atom\"}],\"gas\":\"50000\"},\"memo\":\"memo\",\"msgs\":[[\"%s\"]],\"sequence\":\"6\"}", addr),
+		},
+	}
+	for i, tc := range tests {
+		got := string(StdSignBytes(tc.args.chainID, tc.args.accnum, tc.args.sequence, tc.args.fee, tc.args.msgs, tc.args.memo))
+		require.Equal(t, tc.want, got, "Got unexpected result on test case i: %d", i)
+	}
+}
+*/
+
 func TestTxValidateBasic(t *testing.T) {
 	ctx := sdk.NewContext(nil, abci.Header{ChainID: "mychainid"}, false, log.NewNopLogger())
 

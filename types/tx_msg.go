@@ -2,6 +2,8 @@ package types
 
 import (
 	"encoding/json"
+	"fmt"
+	"os"
 )
 
 // Transactions messages must fulfill the Msg
@@ -67,10 +69,19 @@ func NewTestMsg(addrs ...AccAddress) *TestMsg {
 func (msg *TestMsg) Route() string { return "TestMsg" }
 func (msg *TestMsg) Type() string  { return "Test message" }
 func (msg *TestMsg) GetSignBytes() []byte {
+	fmt.Fprintln(os.Stdout, "TestMsg.GetSignBytes()")
+	fmt.Fprintln(os.Stdout, "msg.signers")
+	fmt.Fprintln(os.Stdout, msg.signers)
+
 	bz, err := json.Marshal(msg.signers)
 	if err != nil {
 		panic(err)
 	}
+
+	fmt.Fprintln(os.Stdout, "MustSortJSON(bz)")
+	fmt.Fprintln(os.Stdout, MustSortJSON(bz))
+	fmt.Fprintln(os.Stdout, "")
+
 	return MustSortJSON(bz)
 }
 func (msg *TestMsg) ValidateBasic() Error { return nil }

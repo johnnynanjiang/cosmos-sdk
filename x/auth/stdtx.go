@@ -3,6 +3,7 @@ package auth
 import (
 	"encoding/json"
 	"fmt"
+	"os"
 
 	"github.com/tendermint/tendermint/crypto"
 	"github.com/tendermint/tendermint/crypto/multisig"
@@ -183,6 +184,11 @@ func StdSignBytes(chainID string, accnum uint64, sequence uint64, fee StdFee, ms
 	if err != nil {
 		panic(err)
 	}
+
+	fmt.Fprintln(os.Stdout, "sdk.MustSortJSON(bz)")
+	fmt.Fprintln(os.Stdout, sdk.MustSortJSON(bz))
+	fmt.Fprintln(os.Stdout, "")
+
 	return sdk.MustSortJSON(bz)
 }
 

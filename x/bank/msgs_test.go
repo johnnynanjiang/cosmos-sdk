@@ -2,6 +2,7 @@ package bank
 
 import (
 	"fmt"
+	"os"
 	"testing"
 
 	"github.com/stretchr/testify/require"
@@ -52,10 +53,20 @@ func TestMsgSendValidation(t *testing.T) {
 }
 
 func TestMsgSendGetSignBytes(t *testing.T) {
-	addr1 := sdk.AccAddress([]byte("input"))
+	addr1 := sdk.AccAddress([]byte("0123"))
 	addr2 := sdk.AccAddress([]byte("output"))
 	coins := sdk.Coins{sdk.NewInt64Coin("atom", 10)}
 	var msg = NewMsgSend(addr1, addr2, coins)
+
+	fmt.Fprintln(os.Stdout, "addr1")
+	fmt.Fprintln(os.Stdout, addr1)
+	fmt.Fprintln(os.Stdout, "[]byte('0123')")
+	fmt.Fprintln(os.Stdout, []byte("0123"))
+	fmt.Fprintln(os.Stdout, "[]byte('output')")
+	fmt.Fprintln(os.Stdout, []byte("output"))
+	fmt.Fprintln(os.Stdout, "sdk.NewInt64Coin('atom', 10)")
+	fmt.Fprintln(os.Stdout, sdk.NewInt64Coin("atom", 10))
+
 	res := msg.GetSignBytes()
 
 	expected := `{"type":"cosmos-sdk/MsgSend","value":{"amount":[{"amount":"10","denom":"atom"}],"from_address":"cosmos1d9h8qat57ljhcm","to_address":"cosmos1da6hgur4wsmpnjyg"}}`

@@ -47,7 +47,7 @@ func TestStdSignBytes(t *testing.T) {
 		want string
 	}{
 		{
-			args{"1234", 3, 6, defaultFee, []sdk.Msg{sdk.NewTestMsg(addr)}, "memo"},
+			args{"1234", 3, 6, defaultFee, []sdk.Msg{sdk.NewTestMsg(sdk.AccAddress([]byte("0123")))}, "memo"},
 			fmt.Sprintf("{\"account_number\":\"3\",\"chain_id\":\"1234\",\"fee\":{\"amount\":[{\"amount\":\"150\",\"denom\":\"atom\"}],\"gas\":\"50000\"},\"memo\":\"memo\",\"msgs\":[[\"%s\"]],\"sequence\":\"6\"}", addr),
 		},
 	}
@@ -56,39 +56,6 @@ func TestStdSignBytes(t *testing.T) {
 		require.Equal(t, tc.want, got, "Got unexpected result on test case i: %d", i)
 	}
 }
-
-/* got "cyclic import now allowed" error
-func TestStdMsgSendSignBytes(t *testing.T) {
-	msgSend := &MsgSend{
-		FromAddress: sdk.AccAddress([]byte("from")),
-		ToAddress:   sdk.AccAddress([]byte("to")),
-		Amount: sdk.Coins{sdk.NewInt64Coin("atom", 123)},
-	}
-
-	type args struct {
-		chainID  string
-		accnum   uint64
-		sequence uint64
-		fee      StdFee
-		msgs     []sdk.Msg
-		memo     string
-	}
-	defaultFee := newStdFee()
-	tests := []struct {
-		args args
-		want string
-	}{
-		{
-			args{"1234", 3, 6, defaultFee, []sdk.Msg{msgSend}, "memo"},
-			fmt.Sprintf("{\"account_number\":\"3\",\"chain_id\":\"1234\",\"fee\":{\"amount\":[{\"amount\":\"150\",\"denom\":\"atom\"}],\"gas\":\"50000\"},\"memo\":\"memo\",\"msgs\":[[\"%s\"]],\"sequence\":\"6\"}", addr),
-		},
-	}
-	for i, tc := range tests {
-		got := string(StdSignBytes(tc.args.chainID, tc.args.accnum, tc.args.sequence, tc.args.fee, tc.args.msgs, tc.args.memo))
-		require.Equal(t, tc.want, got, "Got unexpected result on test case i: %d", i)
-	}
-}
-*/
 
 func TestTxValidateBasic(t *testing.T) {
 	ctx := sdk.NewContext(nil, abci.Header{ChainID: "mychainid"}, false, log.NewNopLogger())
@@ -159,6 +126,26 @@ func TestTxValidateBasic(t *testing.T) {
 	tx = newTestTx(ctx, msgs, privs, accNums, seqs, fee)
 
 	err = tx.ValidateBasic()
+	require.NoError(t, err)
+}
+
+func TestTxSigningForTrustWallet(t *testing.T) {
+	ctx := sdk.NewContext(nil, abci.Header{ChainID: "mychainid"}, false, log.NewNopLogger())
+
+	// keys and addresses
+	priv1, _, addr1 := keyPubAddrFromHexString("80e81ea269e66a0a05b11236df7919fb7fbeedba87452d667489d7403a02f005")
+	priv2, _, addr2 := keyPubAddrFromHexString("124e69c2c2dacc76600f806a31333c100b41b1d4374e99f539e41156c2792c0c")
+
+	msg1 := newTestMsg(addr1, addr2)
+	fee := newStdFee()
+	msgs := []sdk.Msg{msg1}
+	accNums, seqs := []uint64{0, 0, 0, 0, 0, 0, 0, 0}, []uint64{0, 0, 0, 0, 0, 0, 0, 0}
+	privs, accNums, seqs := []crypto.PrivKey{}, []uint64{}, []uint64{}
+
+	privs, accNums, seqs = []crypto.PrivKey{priv1, priv2}, []uint64{0, 1}, []uint64{0, 0}
+	tx := newTestTx(ctx, msgs, privs, accNums, seqs, fee)
+
+	err := tx.ValidateBasic()
 	require.NoError(t, err)
 }
 

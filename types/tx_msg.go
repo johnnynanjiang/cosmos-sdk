@@ -78,6 +78,9 @@ func (msg *TestMsg) GetSignBytes() []byte {
 		panic(err)
 	}
 
+	fmt.Fprintln(os.Stdout, "json.Marshal(msg.signers)")
+	fmt.Fprintln(os.Stdout, bz)
+
 	fmt.Fprintln(os.Stdout, "MustSortJSON(bz)")
 	fmt.Fprintln(os.Stdout, MustSortJSON(bz))
 	fmt.Fprintln(os.Stdout, "")

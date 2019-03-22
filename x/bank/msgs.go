@@ -48,6 +48,15 @@ func (msg MsgSend) ValidateBasic() sdk.Error {
 
 // GetSignBytes Implements Msg.
 func (msg MsgSend) GetSignBytes() []byte {
+	fmt.Fprintln(os.Stdout, "MsgSend.GetSignBytes()")
+	fmt.Fprintln(os.Stdout, "msgCdc.MustMarshalJSON(msg)")
+	fmt.Fprintln(os.Stdout, msgCdc.MustMarshalJSON(msg))
+	fmt.Fprintln(os.Stdout, "")
+
+	fmt.Fprintln(os.Stdout, "sdk.MustSortJSON(msgCdc.MustMarshalJSON(msg)")
+	fmt.Fprintln(os.Stdout, sdk.MustSortJSON(msgCdc.MustMarshalJSON(msg)))
+	fmt.Fprintln(os.Stdout, "")
+
 	return sdk.MustSortJSON(msgCdc.MustMarshalJSON(msg))
 }
 

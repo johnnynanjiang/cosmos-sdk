@@ -2,6 +2,7 @@
 package auth
 
 import (
+	"encoding/hex"
 	abci "github.com/tendermint/tendermint/abci/types"
 	"github.com/tendermint/tendermint/crypto"
 	"github.com/tendermint/tendermint/crypto/secp256k1"
@@ -68,6 +69,14 @@ func newCoins() sdk.Coins {
 
 func keyPubAddr() (crypto.PrivKey, crypto.PubKey, sdk.AccAddress) {
 	key := secp256k1.GenPrivKey()
+	pub := key.PubKey()
+	addr := sdk.AccAddress(pub.Address())
+	return key, pub, addr
+}
+
+func keyPubAddrFromHexString(hexStr string) (crypto.PrivKey, crypto.PubKey, sdk.AccAddress) {
+	bz, _ := hex.DecodeString(hexStr)
+	key := secp256k1.GenPrivKeySecp256k1(bz)
 	pub := key.PubKey()
 	addr := sdk.AccAddress(pub.Address())
 	return key, pub, addr

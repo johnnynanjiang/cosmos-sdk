@@ -185,6 +185,7 @@ func StdSignBytes(chainID string, accnum uint64, sequence uint64, fee StdFee, ms
 		panic(err)
 	}
 
+	fmt.Fprintln(os.Stdout, "stdtx.StdSignBytes()")
 	fmt.Fprintln(os.Stdout, "sdk.MustSortJSON(bz)")
 	fmt.Fprintln(os.Stdout, sdk.MustSortJSON(bz))
 	fmt.Fprintln(os.Stdout, "")

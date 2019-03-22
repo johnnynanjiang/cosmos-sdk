@@ -169,6 +169,8 @@ type StdSignDoc struct {
 
 // StdSignBytes returns the bytes to sign for a transaction.
 func StdSignBytes(chainID string, accnum uint64, sequence uint64, fee StdFee, msgs []sdk.Msg, memo string) []byte {
+	fmt.Fprintln(os.Stdout, "stdtx.StdSignBytes()")
+
 	var msgsBytes []json.RawMessage
 	for _, msg := range msgs {
 		msgsBytes = append(msgsBytes, json.RawMessage(msg.GetSignBytes()))
@@ -185,7 +187,10 @@ func StdSignBytes(chainID string, accnum uint64, sequence uint64, fee StdFee, ms
 		panic(err)
 	}
 
-	fmt.Fprintln(os.Stdout, "stdtx.StdSignBytes()")
+	fmt.Fprintln(os.Stdout, "msgCdc.MarshalJSON(StdSignDoc{})")
+	fmt.Fprintln(os.Stdout, bz)
+	fmt.Fprintln(os.Stdout, "")
+
 	fmt.Fprintln(os.Stdout, "sdk.MustSortJSON(bz)")
 	fmt.Fprintln(os.Stdout, sdk.MustSortJSON(bz))
 	fmt.Fprintln(os.Stdout, "")

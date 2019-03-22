@@ -139,10 +139,8 @@ func TestTxSigningForTrustWallet(t *testing.T) {
 	msg1 := newTestMsg(addr1, addr2)
 	fee := newStdFee()
 	msgs := []sdk.Msg{msg1}
-	accNums, seqs := []uint64{0, 0, 0, 0, 0, 0, 0, 0}, []uint64{0, 0, 0, 0, 0, 0, 0, 0}
-	privs, accNums, seqs := []crypto.PrivKey{}, []uint64{}, []uint64{}
+	privs, accNums, seqs := []crypto.PrivKey{priv1, priv2}, []uint64{0, 1}, []uint64{0, 0}
 
-	privs, accNums, seqs = []crypto.PrivKey{priv1, priv2}, []uint64{0, 1}, []uint64{0, 0}
 	tx := newTestTx(ctx, msgs, privs, accNums, seqs, fee)
 
 	err := tx.ValidateBasic()

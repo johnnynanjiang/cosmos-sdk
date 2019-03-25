@@ -135,7 +135,7 @@ func TestTxSigningForTrustWallet(t *testing.T) {
 	ctx := sdk.NewContext(nil, abci.Header{ChainID: "mychainid"}, false, log.NewNopLogger())
 
 	// keys and addresses
-	_, _, addr1 := keyPubAddrFromHexString("80e81ea269e66a0a05b11236df7919fb7fbeedba87452d667489d7403a02f005")
+	//_, _, addr1 := keyPubAddrFromHexString("80e81ea269e66a0a05b11236df7919fb7fbeedba87452d667489d7403a02f005")
 	//priv2, _, addr2 := keyPubAddrFromHexString("124e69c2c2dacc76600f806a31333c100b41b1d4374e99f539e41156c2792c0c")
 
 	privateInRawBytes, _ := hex.DecodeString("80e81ea269e66a0a05b11236df7919fb7fbeedba87452d667489d7403a02f005")
@@ -143,9 +143,9 @@ func TestTxSigningForTrustWallet(t *testing.T) {
 	copy(privateKeyInBytes[:], privateInRawBytes)
 	privateKey := secp256k1.PrivKeySecp256k1(privateKeyInBytes)
 
-	msg1 := newTestMsg(addr1, addr1)
+	//msg1 := newTestMsg(addr1, addr1)
 	fee := newStdFee()
-	msgs := []sdk.Msg{msg1}
+	msgs := []sdk.Msg{}
 	privs, accNums, seqs := []crypto.PrivKey{privateKey}, []uint64{0}, []uint64{0}
 
 	tx := newTestTx(ctx, msgs, privs, accNums, seqs, fee)

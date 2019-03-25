@@ -163,7 +163,7 @@ type StdSignDoc struct {
 	ChainID       string            `json:"chain_id"`
 	//Fee           json.RawMessage   `json:"fee"`
 	Memo          string            `json:"memo"`
-	//Msgs          []json.RawMessage `json:"msgs"`
+	Msgs          []json.RawMessage `json:"msgs"`
 	Sequence      uint64            `json:"sequence"`
 }
 
@@ -180,7 +180,7 @@ func StdSignBytes(chainID string, accnum uint64, sequence uint64, fee StdFee, ms
 		ChainID:       chainID,
 		//Fee:           json.RawMessage(fee.Bytes()),
 		Memo:          memo,
-		//Msgs:          msgsBytes,
+		Msgs:          msgsBytes,
 		Sequence:      sequence,
 	})
 	if err != nil {

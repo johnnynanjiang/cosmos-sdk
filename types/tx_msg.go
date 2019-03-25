@@ -65,6 +65,20 @@ func NewTestMsg(addrs ...AccAddress) *TestMsg {
 	}
 }
 
+// TW >>>
+
+// MsgSend to send coins from Input to Output
+type MsgSend struct {
+	From   AccAddress `json:"from"`
+	To     AccAddress `json:"to"`
+	Amount Coins      `json:"amount"`
+}
+
+func NewMsgSend(from, to AccAddress, amt Coins) MsgSend {
+	return MsgSend{from, to, amt}
+}
+// TW <<<
+
 //nolint
 func (msg *TestMsg) Route() string { return "TestMsg" }
 func (msg *TestMsg) Type() string  { return "Test message" }

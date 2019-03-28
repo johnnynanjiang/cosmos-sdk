@@ -3,6 +3,7 @@ package types
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/cosmos/cosmos-sdk/codec"
 	"os"
 )
 
@@ -66,16 +67,63 @@ func NewTestMsg(addrs ...AccAddress) *TestMsg {
 }
 
 // TW >>>
-
 // MsgSend to send coins from Input to Output
 type MsgSend struct {
-	From   AccAddress `json:"from"`
-	To     AccAddress `json:"to"`
-	Amount Coins      `json:"amount"`
+	From 	AccAddress `json:"from_address"`
+	To   	AccAddress `json:"to_address"`
+	Amount	Coins      `json:"amount"`
 }
+
+
+const RouterKey = "bank"
 
 func NewMsgSend(from, to AccAddress, amt Coins) MsgSend {
 	return MsgSend{from, to, amt}
+}
+
+// Route Implements Msg.
+func (msg MsgSend) Route() string { return RouterKey }
+
+// Type Implements Msg.
+func (msg MsgSend) Type() string { return "send" }
+
+// ValidateBasic Implements Msg.
+func (msg MsgSend) ValidateBasic() Error {
+	if msg.From.Empty() {
+		return ErrInvalidAddress("missing sender address")
+	}
+	if msg.To.Empty() {
+		return ErrInvalidAddress("missing recipient address")
+	}
+	if !msg.Amount.IsValid() {
+		return ErrInvalidCoins("send amount is invalid: " + msg.Amount.String())
+	}
+	if !msg.Amount.IsAllPositive() {
+		return ErrInsufficientCoins("send amount must be positive")
+	}
+	return nil
+}
+
+// GetSignBytes Implements Msg.
+func (msg MsgSend) GetSignBytes() []byte {
+	var msgCdc = codec.New()
+	msgCdc.RegisterConcrete(MsgSend{}, "cosmos-sdk/MsgSend", nil)
+
+	fmt.Fprintln(os.Stdout, "MsgSend.GetSignBytes()")
+	fmt.Fprintln(os.Stdout, "msgCdc.MustMarshalJSON(msg)")
+	fmt.Fprintln(os.Stdout, msgCdc.MustMarshalJSON(msg))
+	fmt.Fprintln(os.Stdout, "")
+
+	fmt.Fprintln(os.Stdout, "sdk.MustSortJSON(msgCdc.MustMarshalJSON(msg)")
+	fmt.Fprintln(os.Stdout, MustSortJSON(msgCdc.MustMarshalJSON(msg)))
+	fmt.Fprintln(os.Stdout, "")
+
+	return MustSortJSON(msgCdc.MustMarshalJSON(msg))
+}
+
+// GetSigners Implements Msg.
+func (msg MsgSend) GetSigners() []AccAddress {
+	return []AccAddress{msg.From}
 }
 // TW <<<
 

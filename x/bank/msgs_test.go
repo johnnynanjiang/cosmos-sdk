@@ -69,6 +69,9 @@ func TestMsgSendGetSignBytes(t *testing.T) {
 
 	res := msg.GetSignBytes()
 
+	fmt.Fprintln(os.Stdout, "msg.GetSignBytes()")
+	fmt.Fprintln(os.Stdout, string(res))
+
 	expected := `{"type":"cosmos-sdk/MsgSend","value":{"amount":[{"amount":"10","denom":"atom"}],"from_address":"cosmos1hsk6jryyqjfhp5dhc55tc9jtckygx0eph6dd02","to_address":"cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573"}}`
 	require.Equal(t, expected, string(res))
 }

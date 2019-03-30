@@ -1,1 +1,31 @@
-{"type":"auth/StdTx","value":{"msg":[{"type":"cosmos-sdk/MsgSend","value":{"from_address":"cosmos1hsk6jryyqjfhp5dhc55tc9jtckygx0eph6dd02","to_address":"cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573","amount":[{"denom":"muon","amount":"1"}]}}],"fee":{"amount":[{"denom":"photino","amount":"1"}],"gas":"200000"},"signatures":null,"memo":""}}
+{
+  "type": "auth/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgSend",
+        "value": {
+          "from_address": "cosmos1hsk6jryyqjfhp5dhc55tc9jtckygx0eph6dd02",
+          "to_address": "cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573",
+          "amount": [
+            {
+              "denom": "muon",
+              "amount": "1"
+            }
+          ]
+        }
+      }
+    ],
+    "fee": {
+      "amount": [
+        {
+          "denom": "photino",
+          "amount": "1"
+        }
+      ],
+      "gas": "200000"
+    },
+    "signatures": null,
+    "memo": ""
+  }
+}

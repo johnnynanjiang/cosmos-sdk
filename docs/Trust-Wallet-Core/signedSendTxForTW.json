@@ -9,16 +9,21 @@
           "to_address": "cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573",
           "amount": [
             {
-              "denom": "muon",
-              "amount": "1"
+              "denom": "atom",
+              "amount": "10"
             }
           ]
         }
       }
     ],
     "fee": {
-      "amount": null,
-      "gas": "0"
+      "amount": [
+        {
+          "denom": "photino",
+          "amount": "1"
+        }
+      ],
+      "gas": "200000"
     },
     "signatures": [
       {
@@ -26,7 +31,7 @@
           "type": "tendermint/PubKeySecp256k1",
           "value": "AlcobsPzfTNVe7uqAAsndErJAjqplnyudaGB0f+R+p3F"
         },
-        "signature": "2Q8z5E0pI/qaTMvimlKX14BOJdui8cyrykyvW8sGRjJg+4XSaK0hCgziaDi2hzpKV4fTg3at+qEdz2t3/HDDeg=="
+        "signature": "0GPN/ENzBu5nAtGtvNjRwGfg0YhKENBQO2pCIb+gYJg9fPUBrikAnKtK2cJ4S7Qrtp7AOw1lUbByETgyWo513A=="
       }
     ],
     "memo": ""

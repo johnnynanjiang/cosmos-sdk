@@ -1,6 +1,15 @@
 {
   "type": "auth/StdTx",
   "value": {
+    "fee": {
+      "amount": [
+        {
+          "amount": "1",
+          "denom": "photino"
+        }
+      ],
+      "gas": "200000"
+    },
     "memo": "",
     "msg": [
       {
@@ -8,8 +17,8 @@
         "value": {
           "amount": [
             {
-              "amount": "1",
-              "denom": "muon"
+              "amount": "10",
+              "denom": "atom"
             }
           ],
           "from_address": "cosmos1hsk6jryyqjfhp5dhc55tc9jtckygx0eph6dd02",

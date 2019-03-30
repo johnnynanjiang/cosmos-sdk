@@ -161,7 +161,7 @@ func (fee StdFee) Bytes() []byte {
 type StdSignDoc struct {
 	AccountNumber uint64            `json:"account_number"`
 	ChainID       string            `json:"chain_id"`
-	//Fee           json.RawMessage   `json:"fee"`
+	Fee           json.RawMessage   `json:"fee"`
 	Memo          string            `json:"memo"`
 	Msgs          []json.RawMessage `json:"msgs"`
 	Sequence      uint64            `json:"sequence"`
@@ -178,7 +178,7 @@ func StdSignBytes(chainID string, accnum uint64, sequence uint64, fee StdFee, ms
 	bz, err := msgCdc.MarshalJSON(StdSignDoc{
 		AccountNumber: accnum,
 		ChainID:       chainID,
-		//Fee:           json.RawMessage(fee.Bytes()),
+		Fee:           json.RawMessage(fee.Bytes()),
 		Memo:          memo,
 		Msgs:          msgsBytes,
 		Sequence:      sequence,

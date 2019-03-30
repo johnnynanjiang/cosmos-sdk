@@ -4,6 +4,7 @@ import (
 	"encoding/hex"
 	"fmt"
 	"github.com/tendermint/tendermint/crypto/secp256k1"
+	"os"
 	"testing"
 
 	"github.com/stretchr/testify/require"
@@ -131,7 +132,7 @@ func TestTxValidateBasic(t *testing.T) {
 	require.NoError(t, err)
 }
 
-func TestTxSigningForTrustWallet(t *testing.T) {
+func TestTxSigningForTW(t *testing.T) {
 	ctx := sdk.NewContext(nil, abci.Header{ChainID: "mychainid"}, false, log.NewNopLogger())
 
 	// keys and addresses
@@ -151,8 +152,11 @@ func TestTxSigningForTrustWallet(t *testing.T) {
 	msgs := []sdk.Msg{msg1}
 	privs, accNums, seqs := []crypto.PrivKey{privateKey}, []uint64{0}, []uint64{0}
 
-	fee := newStdFee()
+	fee := newStdFeeForTW()
 	tx := newTestTx(ctx, msgs, privs, accNums, seqs, fee)
+
+	fmt.Fprintln(os.Stdout, "newTestTx(ctx, msgs, privs, accNums, seqs, fee)")
+	fmt.Fprintln(os.Stdout, tx)
 
 	err := tx.ValidateBasic()
 	require.NoError(t, err)

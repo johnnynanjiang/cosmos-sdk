@@ -3,6 +3,7 @@ package auth
 
 import (
 	"encoding/hex"
+	"fmt"
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/store"
 	sdk "github.com/cosmos/cosmos-sdk/types"
@@ -12,6 +13,7 @@ import (
 	"github.com/tendermint/tendermint/crypto/secp256k1"
 	dbm "github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/libs/log"
+	"os"
 )
 
 type testInput struct {
@@ -59,6 +61,12 @@ func newStdFee() StdFee {
 	)
 }
 
+func newStdFeeForTW() StdFee {
+	return NewStdFee(200000,
+		sdk.Coins{sdk.NewInt64Coin("photino", 1)},
+	)
+}
+
 // coins to more than cover the fee
 func newCoins() sdk.Coins {
 	return sdk.Coins{
@@ -93,6 +101,9 @@ func newTestTx(ctx sdk.Context, msgs []sdk.Msg, privs []crypto.PrivKey, accNums 
 
 		sigs[i] = StdSignature{PubKey: priv.PubKey(), Signature: sig}
 	}
+
+	fmt.Fprintln(os.Stdout, "sigs[i] = StdSignature{PubKey: priv.PubKey(), Signature: sig}")
+	fmt.Fprintln(os.Stdout, sigs)
 
 	tx := NewStdTx(msgs, fee, sigs, "")
 	return tx

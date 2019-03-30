@@ -1,11 +1,5 @@
-### To Do
-* try out testnet
-
-* a full tx
-{"account_number":"0","chain_id":"mychainid","fee":{"amount":[{"denom":"atom","amount":"150"}],"gas":"50000"},"memo":"","msgs":[{"type":"cosmos-sdk/MsgSend","value":{"amount":[{"amount":"10","denom":"atom"}],"from_address":"cosmos1hsk6jryyqjfhp5dhc55tc9jtckygx0eph6dd02","to_address":"cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573"}}],"sequence":"0"}
-
-* final stdtx
-{[{BC2DA90C84049370D1B7C528BC164BC588833F21 12E8FE8B81ECC1F4F774EA6EC8DF267138B9F2D9 10atom}] {150atom 50000} [{PubKeySecp256k1{0257286EC3F37D33557BBBAA000B27744AC9023AA9967CAE75A181D1FF91FA9DC5} [155 155 180 31 128 0 20 249 90 182 197 64 171 141 62 209 182 196 231 123 30 197 168 218 167 191 60 146 4 34 221 105 119 123 11 201 233 44 182 123 243 109 6 251 179 101 133 186 73 203 36 225 253 15 249 156 56 126 44 149 247 151 167 19]}] }
+### To Do 
+func SignStdTx(txBldr authtxb.TxBuilder, cliCtx context.CLIContext, name string, stdTx auth.StdTx, appendSig bool, offline bool) (auth.StdTx, error)
 
 ---
 
@@ -50,7 +44,7 @@ gaiacli query account cosmos1hsk6jryyqjfhp5dhc55tc9jtckygx0eph6dd02
 `gaiacli query account <your_account_address>`
 
 ##### TX signing
-* `func TestTxSigningForTrustWallet(t *testing.T)` in stdtx_test.go for tx signing
+* `func TestTxSigningForTW(t *testing.T)` in stdtx_test.go for tx signing
 * `func TestMsgSendGetSignBytes(t *testing.T)` for MsgSend encoding
 
 * `sig, err := priv1.Sign(signBytes)` in app4_test.go

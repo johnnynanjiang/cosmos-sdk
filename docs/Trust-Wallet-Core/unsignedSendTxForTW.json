@@ -1,0 +1,21 @@
+{
+  "type": "auth/StdTx",
+  "value": {
+    "memo": "",
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgSend",
+        "value": {
+          "amount": [
+            {
+              "amount": "1",
+              "denom": "muon"
+            }
+          ],
+          "from_address": "cosmos1hsk6jryyqjfhp5dhc55tc9jtckygx0eph6dd02",
+          "to_address": "cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573"
+        }
+      }
+    ]
+  }
+}

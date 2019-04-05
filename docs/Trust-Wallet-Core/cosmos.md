@@ -63,6 +63,7 @@ make
 
 
 ##### Build
+`make tools install`
 `make distclean tools vendor-deps install`
 
 ##### Config

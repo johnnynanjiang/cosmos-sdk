@@ -70,6 +70,8 @@ make
 `gaiacli config chain-id cosmoshub-1`
 
 ##### Keys
+key password is `password`
+
 jnj:cosmos-sdk nanjiang$ `gaiacli keys add key06`
 override the existing name key06 [Y/n]: Y
 Enter a passphrase to encrypt your key to disk:
@@ -158,4 +160,4 @@ inline void printStringInBytes(std::string str) {
 
 ##### Git
 git fetch upstream
-git pull upstream master --rebase
+git pull upstream master

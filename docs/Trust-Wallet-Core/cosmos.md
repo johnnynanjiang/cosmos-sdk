@@ -30,6 +30,13 @@ key09 address cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573
 gaiacli tx send cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573 1muon --fees=1photino --from=key06 --chain-id=test-chain-id --generate-only > unsignedSendTx.json
 ```
 
+* gaicacli submit a tx against testnet (chain-id=cosmoshub-1)
+
+* gaicacli submit a tx against testnet (chain-id=gaia-13002)
+```
+ gaiacli tx send cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573 1muon --fees=1muon --from=key06 --chain-id=gaia-13002
+```
+
 * gaiacli sign a tx
 ```
 gaiacli tx sign --from=key06 --chain-id=test-chain-id unsignedSendTx.json > signedSendTx.json

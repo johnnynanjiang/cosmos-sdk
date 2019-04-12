@@ -30,8 +30,7 @@ key09 address cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573
 gaiacli tx send cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573 1muon --fees=1photino --from=key06 --chain-id=test-chain-id --generate-only > unsignedSendTx.json
 ```
 
-* gaicacli submit a tx against testnet (chain-id=cosmoshub-1)
-
+* gaicacli submit a tx against mainnet (chain-id=cosmoshub-1)
 * gaicacli submit a tx against testnet (chain-id=gaia-13002)
 ```
  gaiacli tx send cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573 1muon --fees=1muon --from=key06 --chain-id=gaia-13002
@@ -57,9 +56,44 @@ gaiacli query account cosmos1hsk6jryyqjfhp5dhc55tc9jtckygx0eph6dd02
 * `sig, err := priv1.Sign(signBytes)` in app4_test.go
 * https://media.readthedocs.org/pdf/cosmos-sdk/docs-refactor/cosmos-sdk.pdf
 
-* mainnet node http://rpc.hub.certus.one:26657
+* mainnet node 
+```
+http://rpc.hub.certus.one:26657
+http://cosmos-node.sparkpool.com:26657
+```
 
-* https://cosmos.network/docs/gaia/delegator-guide-cli.html#sending-transactions
+* gaiacli config in file `/Users/nanjiang/.gaiacli/config/config.toml`
+```
+chain-id = "cosmoshub-1"
+node = "cosmos-node.sparkpool.com:26657"
+```
+
+* Cosmos mainnet explorer, validator list, wallet
+`https://lunie.io/#/staking/validators/`
+
+* mainnet validators
+`https://ztake.org/`
+`https://support.sparkpool.com/hc/en-us/articles/360018949214-Cosmos-Delegator-Guide-CLI-`
+
+* testnet explorer, validator list, wallet
+`testnet.lunie.io`
+
+* mainnet validator list
+`https://forum.cosmos.network/t/validator-candidates/127`
+
+* Gaiacli
+** Send Tx using
+   `https://cosmos.network/docs/gaia/delegator-guide-cli.html#sending-transactions`
+
+##### Staking
+* query account on testnet
+  `gaiacli query account cosmos1hsk6jryyqjfhp5dhc55tc9jtckygx0eph6dd02 --chain-id=gaia-13003`
+
+* get validator list on testnet
+  `gaiacli query staking validators --chain-id=gaia-13003`
+
+* delegate to a validator on testnet 
+  `gaiacli tx staking delegate cosmosvaloper1zkupr83hrzkn3up5elktzcq3tuft8nxsmwdqgp 1stake --from key06 --chain-id=gaia-13003`
 
 ##### Cosmos SDK
 ```
@@ -75,6 +109,12 @@ make
 
 ##### Config
 `gaiacli config chain-id cosmoshub-1`
+
+/Users/nanjiang/.gaiacli/config/config.toml
+```
+chain-id = "gaia-13003"
+node = "http://bity-testnet.cosmos-validators.com:26657"
+```
 
 ##### Keys
 key password is `password`

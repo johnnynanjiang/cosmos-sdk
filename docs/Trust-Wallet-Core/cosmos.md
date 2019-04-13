@@ -27,7 +27,7 @@ key09 address cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573
 
 * gaiacli create a tx, --generate-only for offline tx
 ```
-gaiacli tx send cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573 1muon --fees=1photino --from=key06 --chain-id=test-chain-id --generate-only > unsignedSendTx.json
+gaiacli tx send cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573 1muon --fees=1photino --from=key06 --chain-id=gaia-13003 --generate-only > unsignedSendTx.json
 ```
 
 * gaicacli submit a tx against mainnet (chain-id=cosmoshub-1)
@@ -38,7 +38,7 @@ gaiacli tx send cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573 1muon --fees=1phot
 
 * gaiacli sign a tx
 ```
-gaiacli tx sign --from=key06 --chain-id=test-chain-id unsignedSendTx.json > signedSendTx.json
+gaiacli tx sign --from=key06 --chain-id=gaia-13003 unsignedSendTx.json > signedSendTx.json
 ```
 
 * gaiacli query an account
@@ -95,15 +95,8 @@ node = "cosmos-node.sparkpool.com:26657"
 * delegate to a validator on testnet 
   `gaiacli tx staking delegate cosmosvaloper1zkupr83hrzkn3up5elktzcq3tuft8nxsmwdqgp 1stake --from key06 --chain-id=gaia-13003`
 
-##### Cosmos SDK
-```
-checkout git repository
-dep ensure -v
-make
-```
-
-
 ##### Build
+`dep ensure -v`
 `make tools install`
 `make distclean tools vendor-deps install`
 
@@ -111,9 +104,10 @@ make
 `gaiacli config chain-id cosmoshub-1`
 
 /Users/nanjiang/.gaiacli/config/config.toml
+
 ```
 chain-id = "gaia-13003"
-node = "http://bity-testnet.cosmos-validators.com:26657"
+node = "https://gaia.validator.network:443"
 ```
 
 ##### Keys

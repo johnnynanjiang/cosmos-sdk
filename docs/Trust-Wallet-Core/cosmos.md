@@ -1,4 +1,7 @@
 ### To Do 
+gaiacli tx send cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573 1muon --fees=1muon --from=key06 --chain-id=gaia-13003
+gaiacli tx staking delegate cosmosvaloper1zkupr83hrzkn3up5elktzcq3tuft8nxsmwdqgp 1muon --from key06 --chain-id=gaia-13003
+
 func SignStdTx(txBldr authtxb.TxBuilder, cliCtx context.CLIContext, name string, stdTx auth.StdTx, appendSig bool, offline bool) (auth.StdTx, error)
 
 ---
@@ -17,8 +20,10 @@ HRP is defined in `address.go`
   https://medium.com/forbole/a-step-by-step-guide-to-join-cosmos-hub-testnet-e591a3d2cb41
 * connect to testnet full node with gaiacli
   https://cosmos.network/docs/gaia/delegator-guide-cli.html#accessing-the-cosmos-hub-network
-* a working testnet full node
+* a working testnet full node for gaia-13002
   http://bity-testnet.cosmos-validators.com:26657
+* a working testnet full node for gaia-13003
+  node = "https://gaia.validator.network:443"
 * a working testnet and faucet 
   https://hubble.figment.network/chains/gaia-13002
  
@@ -33,7 +38,7 @@ gaiacli tx send cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573 1muon --fees=1phot
 * gaicacli submit a tx against mainnet (chain-id=cosmoshub-1)
 * gaicacli submit a tx against testnet (chain-id=gaia-13002)
 ```
- gaiacli tx send cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573 1muon --fees=1muon --from=key06 --chain-id=gaia-13002
+ gaiacli tx send cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573 1muon --fees=1muon --from=key06 --chain-id=gaia-13003
 ```
 
 * gaiacli sign a tx
@@ -44,6 +49,7 @@ gaiacli tx sign --from=key06 --chain-id=gaia-13003 unsignedSendTx.json > signedS
 * gaiacli query an account
 ```
 gaiacli query account cosmos1hsk6jryyqjfhp5dhc55tc9jtckygx0eph6dd02
+gaiacli query account cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573
 ```
 
 ##### Accounts
@@ -88,6 +94,7 @@ node = "cosmos-node.sparkpool.com:26657"
 ##### Staking
 * query account on testnet
   `gaiacli query account cosmos1hsk6jryyqjfhp5dhc55tc9jtckygx0eph6dd02 --chain-id=gaia-13003`
+  `gaiacli query account cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573`
 
 * get validator list on testnet
   `gaiacli query staking validators --chain-id=gaia-13003`

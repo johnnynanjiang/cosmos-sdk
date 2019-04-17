@@ -1,0 +1,28 @@
+{
+  "account_number": "1037",
+  "chain_id": "gaia-13003",
+  "fee": {
+    "amount": [
+      {
+        "denom": "muon",
+        "amount": "1018"
+      }
+    ],
+    "gas": "101721"
+  },
+  "memo": "",
+  "msgs": [
+    {
+      "type": "cosmos-sdk/MsgDelegate",
+      "value": {
+        "amount": {
+          "amount": "10",
+          "denom": "muon"
+        },
+        "delegator_address": "cosmos1hsk6jryyqjfhp5dhc55tc9jtckygx0eph6dd02",
+        "validator_address": "cosmosvaloper1zkupr83hrzkn3up5elktzcq3tuft8nxsmwdqgp"
+      }
+    }
+  ],
+  "sequence": "7"
+}

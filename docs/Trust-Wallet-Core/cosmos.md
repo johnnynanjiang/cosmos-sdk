@@ -100,7 +100,9 @@ node = "cosmos-node.sparkpool.com:26657"
   `gaiacli query staking validators --chain-id=gaia-13003`
 
 * delegate to a validator on testnet 
-  `gaiacli tx staking delegate cosmosvaloper1zkupr83hrzkn3up5elktzcq3tuft8nxsmwdqgp 1stake --from key06 --chain-id=gaia-13003`
+```
+gaiacli tx staking delegate cosmosvaloper1zkupr83hrzkn3up5elktzcq3tuft8nxsmwdqgp 10muon --from key06 --chain-id=gaia-13003 --node https://gaia.validator.network:443 --gas auto --gas-adjustment 1.2 --gas-prices 0.01muon
+```
 
 ##### Build
 `dep ensure -v`

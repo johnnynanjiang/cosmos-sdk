@@ -1,0 +1,432 @@
+Validator
+  Operator Address:           cosmosvaloper1zkupr83hrzkn3up5elktzcq3tuft8nxsmwdqgp
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqmr8qjy576ugvnkc0sglkvrpqguh9jj2c3a56m4p5u0wjtnk786qqx0453y
+  Jailed:                     true
+  Status:                     Unbonded
+  Tokens:                     2044897049
+  Delegator Shares:           2044897049.000000000000000000
+  Description:                {!debt   }
+  Unbonding Height:           178797
+  Unbonding Completion Time:  2019-04-04 04:43:06.221295924 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 1.000000000000000000, maxRate: 1.000000000000000000, maxChangeRate: 1.000000000000000000, updateTime: 2019-03-26 12:35:56.665024821 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1zmw9kwmldgxt8czg0csuqnr4j8syls5jkm88vg
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqm8c8dufedvl0c2r4mtjk5lh32v98t6m72ayjnfhlu3e4fvhdkycqwqpux2
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     1000000
+  Delegator Shares:           1000000.000000000000000000
+  Description:                {Bity.com 6A013095E83CC0F4 https://bity.com/ We offer professional, secure, and reliable crypto staking services for investors looking to stake their coins with trusted third parties, such as the Cosmos Network. :)}
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.200000000000000000, maxRate: 0.200000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-03-28 21:49:05.174132696 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1r4lzzzf683ec70fxfd9a3jmczxxkdxpflm2njd
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqz550mrx2gguat86lftpyx38fn3rtelhr4wssj7zhspjdejcujd7qnvw5jv
+  Jailed:                     true
+  Status:                     Unbonded
+  Tokens:                     9989048005
+  Delegator Shares:           9989048005.000000000000000000
+  Description:                {Mira - Ztake.org   }
+  Unbonding Height:           230548
+  Unbonding Completion Time:  2019-04-07 11:36:12.323572243 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.900000000000000000, maxRate: 1.000000000000000000, maxChangeRate: 1.000000000000000000, updateTime: 2019-03-23 22:16:32.456748126 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1rcp29q3hpd246n6qak7jluqep4v006cdsc2kkl
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqqxwmfv9g0jt03u82ez88mgezzvhlpszdn4x5ec4vdepr6k26dmgqumy0r2
+  Jailed:                     true
+  Status:                     Unbonded
+  Tokens:                     6999489
+  Delegator Shares:           6999489.000000000000000000
+  Description:                {Huh?  https://in3s.com/Services#CosmosValidator }
+  Unbonding Height:           144508
+  Unbonding Completion Time:  2019-04-02 01:28:50.725736616 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 1.000000000000000000, maxRate: 1.000000000000000000, maxChangeRate: 1.000000000000000000, updateTime: 2019-03-21 10:42:41.760226978 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1yds9h4lqn0xggm3kahn0vznhv59cljjlfh3sa2
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqq87kz5as4g6ltvalz43lhcpfyt2hp5mgaw3c8yzerlfgg339jpfq7lurpe
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     1026270000
+  Delegator Shares:           1026270000.000000000000000000
+  Description:                {HashFabric⛓️⚙️💾   }
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.020000000000000000, maxRate: 0.100000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-03-21 23:07:51.339730887 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1xvt4e7xd0j9dwv2w83g50tpcltsl90h50mmy4e
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqn7mscgfdw9pfl903ul9rj4h9v7fjnzcacy8esk25t8lvxvdqfn5q3yyn9p
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     110001120000
+  Delegator Shares:           110001120000.000000000000000000
+  Description:                {Staking Fund  https://staking.fund }
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.990000000000000000, maxRate: 1.000000000000000000, maxChangeRate: 1.000000000000000000, updateTime: 2019-03-20 23:23:00.2335418 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper18p62z98hrn6h9qyqem7kxy04l8u7a4yvdjz9ac
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepq05eqexdl3ys3h7g7yavmu9hjlgrkm799us620ghlzedfuvdtghpqr4dld0
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     19900000
+  Delegator Shares:           19900000.000000000000000000
+  Description:                {StakeVC Testor   }
+  Unbonding Height:           217304
+  Unbonding Completion Time:  2019-04-06 14:19:45.09877554 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.100000000000000000, maxRate: 0.200000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-04-02 06:21:00.563432988 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper18vspjrcxgq66spd5c4s42eg8v7u20wqu9y2u3a
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepq7we482wta0vq7snd32kcgglrkvfjpkw0kn6040595z7tpywfr2asd9ec30
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     10000000000
+  Delegator Shares:           10000000000.000000000000000000
+  Description:                {StakedGaia   }
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.100000000000000000, maxRate: 0.200000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-03-25 16:12:10.882095591 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper185n9jln2g4w79w39m0g85x2tns6uekqg8hrx3j
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepq3ct3cygpxvw0d0wcnwhv43grspaeawgwpg8tryd8p76jlemhs9lsg2qgsm
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     211040138954
+  Delegator Shares:           211040138954.000000000000000000
+  Description:                {DerFredy   }
+  Unbonding Height:           146708
+  Unbonding Completion Time:  2019-04-02 05:29:33.3309993 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.100000000000000000, maxRate: 1.000000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-03-21 11:41:50.493219685 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1g8xwmm3tp7pgdrmjgt4fm7d26anrrnlehk42nq
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqu3srzgruamf6jaylwv20xq6s4snjhtn6t9razznmn2vn9sekslcsdscys3
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     211342608212
+  Delegator Shares:           211342608212.000000000000000000
+  Description:                {coronas02   }
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.100000000000000000, maxRate: 1.000000000000000000, maxChangeRate: 1.000000000000000000, updateTime: 2019-03-21 07:32:28.430775158 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1gtr7jlkvrr4sg6n2t0awxagazmddsv4cudtrw6
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqfhs3wrmsvfaqu5q6fhjmurgu6cn5axcvy7g5xky0jhm8ydn5c7vqpr84gz
+  Jailed:                     true
+  Status:                     Unbonded
+  Tokens:                     1000000
+  Delegator Shares:           1000000.000000000000000000
+  Description:                {shakybit2   }
+  Unbonding Height:           51404
+  Unbonding Completion Time:  2019-03-27 00:07:07.232667041 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.050000000000000000, maxRate: 0.300000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-03-23 12:46:19.986122081 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1gmn2qv4gh6kmqpzfz7tjyv3euhcz72ynuzakj7
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepq54qq59x20sgaqety2j0pdjs7rj99g7hglvce3uauc5nplpa4tczq0th84n
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     1000000000
+  Delegator Shares:           1000000000.000000000000000000
+  Description:                {earthshaker   }
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.100000000000000000, maxRate: 0.200000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-04-08 15:28:42.08595973 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1gu5v3mmzzz7987tfgrhdka5y09glrljvtxmvnx
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqarqdkedy8gfvg6emcy4qv6cjyecpaydh87hnuuhk70cxvxddkmuqjpnpzu
+  Jailed:                     true
+  Status:                     Unbonded
+  Tokens:                     134670812
+  Delegator Shares:           134670812.000000000000000000
+  Description:                {Stardash   }
+  Unbonding Height:           210424
+  Unbonding Completion Time:  2019-04-06 04:03:43.106953669 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.200000000000000000, maxRate: 1.000000000000000000, maxChangeRate: 1.000000000000000000, updateTime: 2019-03-21 07:14:30.619736193 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper12t65dsk4fdnxylj2wtr0x8qcgjthvvegqg7zkm
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqqaqfuljnv6gxjg6fnc09ma6qssswweljlyvhjteqtwrsj366w5lsxl0qvu
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     9000000000
+  Delegator Shares:           9000000000.000000000000000000
+  Description:                {‮🐸ǝ‮ǝɹɥʇoʍʇǝuo‮plɹoʍollǝɥ🐸   }
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 1.000000000000000000, maxRate: 1.000000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-03-28 20:14:28.710685473 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper127lpxh27f2jd684eyx9tzzcdk06r9knc455eym
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqllsqvj3fdlkjqf5cyymnu79kxvxrj9duknqgwtexe2w6f4ygkyysuda7dr
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     110002200000
+  Delegator Shares:           110002200000.000000000000000000
+  Description:                {Figment   }
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.100000000000000000, maxRate: 1.000000000000000000, maxChangeRate: 1.000000000000000000, updateTime: 2019-03-20 23:37:59.474145333 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1t794ueut3aer2rw5xt7n8dr0xwmqmg8naf4nex
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqzyxfl4xlgl3j94xr28nv3kw3j07sf5zcmkvsvu6y2q6a0a9ly09spc4fs9
+  Jailed:                     true
+  Status:                     Unbonded
+  Tokens:                     1000000
+  Delegator Shares:           1000000.000000000000000000
+  Description:                {WackyJacky   }
+  Unbonding Height:           225861
+  Unbonding Completion Time:  2019-04-07 04:03:46.135094409 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.050000000000000000, maxRate: 0.200000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-04-03 19:37:16.286495074 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1v2ntw8ce53lk4dfsu9c5n76mpy03gg5alu4gag
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqa0cqufceu7prwldp68jdpqmn84jhfghe5shh7e9wpn6udmcfk6mqp8u85z
+  Jailed:                     true
+  Status:                     Unbonded
+  Tokens:                     1000000
+  Delegator Shares:           1000000.000000000000000000
+  Description:                {ShakyBit4   }
+  Unbonding Height:           190976
+  Unbonding Completion Time:  2019-04-04 22:29:46.843716114 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.050000000000000000, maxRate: 0.200000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-03-30 16:11:05.916685074 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1vkggdmhuacs2306uasqw3au8a8lmcmqh98u77x
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqzv5lazxywldkesdtfk5vlaeejvw3a6e7pp8q3u7yhnhxveyn80hq30t0e4
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     8000000000
+  Delegator Shares:           8000000000.000000000000000000
+  Description:                {sparkpool   }
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    10
+  Commission:                 rate: 0.500000000000000000, maxRate: 1.000000000000000000, maxChangeRate: 1.000000000000000000, updateTime: 2019-03-22 10:13:53.148398525 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1wtv0kp6ydt03edd8kyr5arr4f3yc52vp3u2x3u
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqd49gmw4fqd0n2lrwlhmt8qqgdmlj0f0eeaxer9e5g3wth8ycqemqkxtjg0
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     110919220001
+  Delegator Shares:           110919220001.000000000000000000
+  Description:                {kytzu   }
+  Unbonding Height:           225033
+  Unbonding Completion Time:  2019-04-07 02:48:35.938006499 +0000 UTC
+  Minimum Self Delegation:    2000000
+  Commission:                 rate: 0.100000000000000000, maxRate: 0.200000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-03-21 17:39:00.670956442 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper13psmeywshfyfcg3tr5l4qm968smtkcu87f840a
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqchaskqu6hgywfwd2t0qr66d9j2d89fygv4a2rd65fapp3g4ck44stuna3z
+  Jailed:                     true
+  Status:                     Unbonded
+  Tokens:                     1000000000
+  Delegator Shares:           1000000000.000000000000000000
+  Description:                {suyuuuuuuu   }
+  Unbonding Height:           113001
+  Unbonding Completion Time:  2019-03-30 23:51:23.027232761 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 1.000000000000000000, maxRate: 1.000000000000000000, maxChangeRate: 1.000000000000000000, updateTime: 2019-03-21 00:10:40.261405273 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1jpvjgfspk2hmtm9et5jpm72z37e8xy5pllxhke
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepq32uh0e4azqpu9yg9t8p992549u0ntggcnp0r5xmf0suxm40nx6sq7jd9vf
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     10000000
+  Delegator Shares:           10000000.000000000000000000
+  Description:                {P2P.ORG Validator   }
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    1000
+  Commission:                 rate: 0.100000000000000000, maxRate: 0.200000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-03-21 09:43:20.502729768 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1jxv0u20scum4trha72c7ltfgfqef6nsch7q6cu
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqqyeunev4tc3z4v77609tqlz90s0m8jtn6dyjfzkne2l9zvnhcpxqtdwxs8
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     105018999999
+  Delegator Shares:           105018999999.000000000000000000
+  Description:                {liangping-kms   }
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.100000000000000000, maxRate: 1.000000000000000000, maxChangeRate: 1.000000000000000000, updateTime: 2019-03-21 03:29:55.450995593 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1j3nlv8wcfst2mezkny4w2up76wfgnkq7spdhsr
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqgta6se8tczzxnvftkw85l8yeu3nkk3f94ywvwg6rmq588q6wml7q6s0au5
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     5000000000
+  Delegator Shares:           5000000000.000000000000000000
+  Description:                {Bianjie A6DFF8A48236A5C7 https://www.bianjie.ai/cosmos Core developer of IRISnet, active contributor to Cosmos.}
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.100000000000000000, maxRate: 0.200000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-03-25 11:07:56.838517545 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1nqen5h0jeht55r2j5fm02n0e3ktsvha3jy8jsc
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqvd7fyxq9xvjsn9tuyk84mn6tdxan2vasaykft5exy0nyf0ctuk8scsza92
+  Jailed:                     true
+  Status:                     Unbonded
+  Tokens:                     99000000
+  Delegator Shares:           99000000.000000000000000000
+  Description:                {ShakyBit3   }
+  Unbonding Height:           130479
+  Unbonding Completion Time:  2019-04-01 03:09:40.526449956 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.050000000000000000, maxRate: 0.200000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-03-25 11:30:40.039380417 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1npfxy85me25gmy63x77ye9528upu7xfmfsf9pn
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepq089r8le8npf5e7mr2jsamsl9fjnwtv89xu3mdevd6g3m2us37swsjc0wq2
+  Jailed:                     true
+  Status:                     Unbonded
+  Tokens:                     700000000
+  Delegator Shares:           700000000.000000000000000000
+  Description:                {suyu ledger   }
+  Unbonding Height:           112667
+  Unbonding Completion Time:  2019-03-30 23:19:41.799558974 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 1.000000000000000000, maxRate: 1.000000000000000000, maxChangeRate: 1.000000000000000000, updateTime: 2019-03-27 00:24:41.393483579 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1ny0dv7y3lzptac4ppurlrj7dnlv6m7wz56r7yq
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqt8s268qymyn357pr6w6ywskq82vlf5yacw7xjfe5wuzgl5fl6xhqxplnyw
+  Jailed:                     true
+  Status:                     Unbonded
+  Tokens:                     1000000
+  Delegator Shares:           1000000.000000000000000000
+  Description:                {shakybit   }
+  Unbonding Height:           47364
+  Unbonding Completion Time:  2019-03-26 17:44:58.534039365 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.050000000000000000, maxRate: 0.300000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-03-23 09:48:31.161366237 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper15hh9uznjpez6zq0xgr3dn90z2rkxtj3yknq6gj
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqtdkjxgfg52dq9pn9wu82chzzcz8l03nvp2ee8uguvlqpv8v0g77qc887cf
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     6900000
+  Delegator Shares:           6900000.000000000000000000
+  Description:                {consensus_networks   }
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    10
+  Commission:                 rate: 0.100000000000000000, maxRate: 0.100000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-03-25 19:30:37.44416668 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1402qxm9vu9dpt5wzrwquwxx0v5jajtrxqjq7rn
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepq2wqqzwytaepmqrg2fn50yz7fg4y93kh6uqyrd93uln93y2s0z6xqa34wjx
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     1000000
+  Delegator Shares:           1000000.000000000000000000
+  Description:                {homey1   }
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.100000000000000000, maxRate: 0.200000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-04-06 14:32:47.657754033 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper14m5044lj2cln99lsr8r3nq2k8jsjvu8gwjyzpv
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepq4j5l6245njur934u83jyd7k562zpu4pegxvujkutg8pruru5duwqdy2vlf
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     1000000
+  Delegator Shares:           1000000.000000000000000000
+  Description:                {01no.de   }
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    1000000
+  Commission:                 rate: 0.100000000000000000, maxRate: 0.200000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-03-26 10:52:05.925912982 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1k8kpqt3rfxlf30wtclrmjjk44lzjp4zz7pyh7w
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqtwlpq4f3m23zm9a5dyf82sskx2e2sx476ntqyq32628s5567klgq9fflu5
+  Jailed:                     true
+  Status:                     Unbonding
+  Tokens:                     5000000000
+  Delegator Shares:           5000000000.000000000000000000
+  Description:                {ATEAM-KMS   }
+  Unbonding Height:           281949
+  Unbonding Completion Time:  2019-04-10 19:22:03.990039094 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.099000000000000000, maxRate: 1.000000000000000000, maxChangeRate: 1.000000000000000000, updateTime: 2019-04-02 12:24:55.934266932 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1ktcwmkrgamuhfqm78mwy0py8a0uy5mddhkn0hg
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqmxfl83u58jvtdd3dtls3720jjc6m5g2pgvekfmfevlgx8xqj405q05eauw
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     19621634004
+  Delegator Shares:           19621634004.000000000000000000
+  Description:                {syncnode   }
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    10
+  Commission:                 rate: 0.100000000000000000, maxRate: 0.200000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-03-26 12:51:01.63575104 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1kvj6kaaugkq86nnppay4x82esvxlpwmxpeumk0
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepq0xv23rngefyjmpdleqd835757mm2kkgk7wjuy4vejf3xqycfn4qqehcs4z
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     110000000000
+  Delegator Shares:           110000000000.000000000000000000
+  Description:                {comdex  https://comdex.sg }
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    1000
+  Commission:                 rate: 1.000000000000000000, maxRate: 1.000000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-03-22 10:14:44.208558529 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper169cxw3pkffw66vxlppy86n205rklhna8l8mtam
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepq74uvmk5hry6am3k5j08u2f690wevrdeemlskfmqjp282s2z2yhyqx2yzga
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     110074930000
+  Delegator Shares:           110074930000.000000000000000000
+  Description:                {Delega Networks♾ 1BED7C08416A619F https://delega.io Your currencies are safe with Delega Networks}
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.080000000000000000, maxRate: 0.500000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-03-21 11:19:37.134066534 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1u6ddcsjueax884l3tfrs66497c7g86skn7pa0u
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepq87zcnf8sm4ewacjafqujfevt8rhwj5qk9uwtx4ef89ctuqmndkeq446ahw
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     1000000000
+  Delegator Shares:           1000000000.000000000000000000
+  Description:                {Sentinel-validator   }
+  Unbonding Height:           0
+  Unbonding Completion Time:  1970-01-01 00:00:00 +0000 UTC
+  Minimum Self Delegation:    1000
+  Commission:                 rate: 0.100000000000000000, maxRate: 0.200000000000000000, maxChangeRate: 0.010000000000000000, updateTime: 2019-03-21 13:45:19.060033688 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1le0gdn7u8z4vyjyctp32zhmqd2wufvy5tkrd6x
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepqulmyufljgxekm2lm32vsqxpw0j6uf4kyd0shyxds9pfzegufressqxn88w
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     16000000
+  Delegator Shares:           16000000.000000000000000000
+  Description:                {piggy-coin 003 FD4BAC5CE60EFB7D https://www.piggy-coin.com/ Testing 1-2-3, Hey is this thing even on?}
+  Unbonding Height:           46455
+  Unbonding Completion Time:  2019-03-26 16:18:44.582310839 +0000 UTC
+  Minimum Self Delegation:    1000000
+  Commission:                 rate: 0.250000000000000000, maxRate: 1.000000000000000000, maxChangeRate: 1.000000000000000000, updateTime: 2019-03-22 21:19:47.945010527 +0000 UTC
+Validator
+  Operator Address:           cosmosvaloper1le34teftd4fa5lu64uyafzmw78yq7dgcnxchp3
+  Validator Consensus Pubkey: cosmosvalconspub1zcjduepq3c733lzuhsjjy5w7p7836n5z0drecccpceg4y7rdtjg76mquezeqlagcf0
+  Jailed:                     false
+  Status:                     Bonded
+  Tokens:                     10385011856
+  Delegator Shares:           10385011856.000000000000000000
+  Description:                {nuevax   }
+  Unbonding Height:           259611
+  Unbonding Completion Time:  2019-04-09 09:26:12.366123709 +0000 UTC
+  Minimum Self Delegation:    1
+  Commission:                 rate: 0.100000000000000000, maxRate: 0.200000000000000000, maxChangeRate: 0.020000000000000000, updateTime: 2019-03-29 04:27:26.492739919 +0000 UTC

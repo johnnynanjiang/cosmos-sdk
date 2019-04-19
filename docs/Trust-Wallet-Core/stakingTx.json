@@ -1,28 +1,66 @@
 {
-  "account_number": "1037",
-  "chain_id": "gaia-13003",
-  "fee": {
-    "amount": [
-      {
-        "denom": "muon",
-        "amount": "1018"
-      }
-    ],
-    "gas": "101721"
-  },
-  "memo": "",
-  "msgs": [
+  "height": "125922",
+  "txhash": "AAE5E18516DC8B0EF864F91B9531AB63B2248E3FC9058B6A330AE79EF1B4120A",
+  "raw_log": "[{\"msg_index\":\"0\",\"success\":true,\"log\":\"\"}]",
+  "logs": [
     {
-      "type": "cosmos-sdk/MsgDelegate",
-      "value": {
-        "amount": {
-          "amount": "10",
-          "denom": "muon"
-        },
-        "delegator_address": "cosmos1hsk6jryyqjfhp5dhc55tc9jtckygx0eph6dd02",
-        "validator_address": "cosmosvaloper1zkupr83hrzkn3up5elktzcq3tuft8nxsmwdqgp"
-      }
+      "msg_index": "0",
+      "success": true,
+      "log": ""
     }
   ],
-  "sequence": "7"
+  "gas_wanted": "101721",
+  "gas_used": "88231",
+  "tags": [
+    {
+      "key": "action",
+      "value": "delegate"
+    },
+    {
+      "key": "delegator",
+      "value": "cosmos1hsk6jryyqjfhp5dhc55tc9jtckygx0eph6dd02"
+    },
+    {
+      "key": "destination-validator",
+      "value": "cosmosvaloper1zkupr83hrzkn3up5elktzcq3tuft8nxsmwdqgp"
+    }
+  ],
+  "tx": {
+    "type": "auth/StdTx",
+    "value": {
+      "msg": [
+        {
+          "type": "cosmos-sdk/MsgDelegate",
+          "value": {
+            "delegator_address": "cosmos1hsk6jryyqjfhp5dhc55tc9jtckygx0eph6dd02",
+            "validator_address": "cosmosvaloper1zkupr83hrzkn3up5elktzcq3tuft8nxsmwdqgp",
+            "amount": {
+              "denom": "muon",
+              "amount": "10"
+            }
+          }
+        }
+      ],
+      "fee": {
+        "amount": [
+          {
+            "denom": "muon",
+            "amount": "1018"
+          }
+        ],
+        "gas": "101721"
+      },
+      "signatures": [
+        {
+          "pub_key": {
+            "type": "tendermint/PubKeySecp256k1",
+            "value": "AlcobsPzfTNVe7uqAAsndErJAjqplnyudaGB0f+R+p3F"
+          },
+          "signature": "wIvfbCsLRCjzeXXoXTKfHLGXRbAAmUp0O134HVfVc6pfdVNJvvzISMHRUHgYcjsSiFlLyR32heia/yLgMDtIYQ=="
+        }
+      ],
+      "memo": ""
+    }
+  },
+  "timestamp": "2019-04-17T10:47:56Z"
 }

@@ -1,8 +1,4 @@
 ### To Do 
-gaiacli tx send cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573 1muon --fees=1muon --from=key06 --chain-id=gaia-13003
-gaiacli tx staking delegate cosmosvaloper1zkupr83hrzkn3up5elktzcq3tuft8nxsmwdqgp 1muon --from key06 --chain-id=gaia-13003
-
-func SignStdTx(txBldr authtxb.TxBuilder, cliCtx context.CLIContext, name string, stdTx auth.StdTx, appendSig bool, offline bool) (auth.StdTx, error)
 
 ---
 
@@ -38,7 +34,7 @@ gaiacli tx send cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573 1muon --fees=1phot
 * gaicacli submit a tx against mainnet (chain-id=cosmoshub-1)
 * gaicacli submit a tx against testnet (chain-id=gaia-13002)
 ```
- gaiacli tx send cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573 1muon --fees=1muon --from=key06 --chain-id=gaia-13003
+ gaiacli tx send cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573 1muon --fees=200muon --from=key06 --chain-id=gaia-13003
 ```
 
 * gaiacli sign a tx
@@ -209,5 +205,16 @@ inline void printStringInBytes(std::string str) {
 ```
 
 ##### Git
+```
 git fetch upstream
 git pull upstream master
+```
+
+```
+git merge --squash branch-name
+git commit -m "???"
+```
+
+```
+git rebase -i HEAD~x
+```

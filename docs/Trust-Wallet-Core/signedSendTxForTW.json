@@ -1,39 +1,68 @@
 {
-  "type": "auth/StdTx",
-  "value": {
-    "msg": [
-      {
-        "type": "cosmos-sdk/MsgSend",
-        "value": {
-          "from_address": "cosmos1hsk6jryyqjfhp5dhc55tc9jtckygx0eph6dd02",
-          "to_address": "cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573",
-          "amount": [
-            {
-              "denom": "atom",
-              "amount": "10"
-            }
-          ]
-        }
-      }
-    ],
-    "fee": {
-      "amount": [
+  "height": "142911",
+  "txhash": "3A9206598C3D2E75A5EC074FD33EA53EB18EC729357F0965971C1C51F812AEA3",
+  "raw_log": "[{\"msg_index\":\"0\",\"success\":true,\"log\":\"\"}]",
+  "logs": [
+    {
+      "msg_index": "0",
+      "success": true,
+      "log": ""
+    }
+  ],
+  "gas_wanted": "200000",
+  "gas_used": "26172",
+  "tags": [
+    {
+      "key": "action",
+      "value": "send"
+    },
+    {
+      "key": "sender",
+      "value": "cosmos1hsk6jryyqjfhp5dhc55tc9jtckygx0eph6dd02"
+    },
+    {
+      "key": "recipient",
+      "value": "cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573"
+    }
+  ],
+  "tx": {
+    "type": "auth/StdTx",
+    "value": {
+      "msg": [
         {
-          "denom": "photino",
-          "amount": "1"
+          "type": "cosmos-sdk/MsgSend",
+          "value": {
+            "from_address": "cosmos1hsk6jryyqjfhp5dhc55tc9jtckygx0eph6dd02",
+            "to_address": "cosmos1zt50azupanqlfam5afhv3hexwyutnukeh4c573",
+            "amount": [
+              {
+                "denom": "muon",
+                "amount": "1"
+              }
+            ]
+          }
         }
       ],
-      "gas": "200000"
-    },
-    "signatures": [
-      {
-        "pub_key": {
-          "type": "tendermint/PubKeySecp256k1",
-          "value": "AlcobsPzfTNVe7uqAAsndErJAjqplnyudaGB0f+R+p3F"
-        },
-        "signature": "0GPN/ENzBu5nAtGtvNjRwGfg0YhKENBQO2pCIb+gYJg9fPUBrikAnKtK2cJ4S7Qrtp7AOw1lUbByETgyWo513A=="
-      }
-    ],
-    "memo": ""
-  }
+      "fee": {
+        "amount": [
+          {
+            "denom": "muon",
+            "amount": "200"
+          }
+        ],
+        "gas": "200000"
+      },
+      "signatures": [
+        {
+          "pub_key": {
+            "type": "tendermint/PubKeySecp256k1",
+            "value": "AlcobsPzfTNVe7uqAAsndErJAjqplnyudaGB0f+R+p3F"
+          },
+          "signature": "/D74mdIGyIB3/sQvIboLTfS9P9EV/fYGrgHZE2/vNj9X6eM6e57G3atljNB+PABnRw3pTk51uXmhCFop8O/ZJg=="
+        }
+      ],
+      "memo": ""
+    }
+  },
+  "timestamp": "2019-04-18T13:07:03Z"
 }
